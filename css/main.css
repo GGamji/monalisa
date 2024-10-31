@@ -233,11 +233,11 @@ header .allmenu_wrap .btn_allmenu_close {
 }
 .brand-swiper .swiper-prev {
   position: absolute;top: 50%;left: 3%;
-  transform: translate(-50%, -3%);z-index: 100;
+  transform: translate(-50%, -3%);z-index: 10;
 }
 .brand-swiper .swiper-next {
   position: absolute;top: 50%;right: 0;
-  transform: translate(-50%, 0);z-index: 100;
+  transform: translate(-50%, 0);z-index: 10;
 }
 
 @media screen and (max-width: 1440px) {
@@ -300,6 +300,16 @@ header .allmenu_wrap .btn_allmenu_close {
 	text-overflow: ellipsis;font-size: 16px;
 }
 .news_content .news_card span:last-child {font-size: 14px;}
+
+@media screen and (max-width: 1240px) {
+  .news_wrap .news_content {overflow: hidden;justify-content: flex-start;}
+  .news_wrap .news_content .news_card {flex-shrink: 0;width: calc(50% - 20px);}
+}
+@media screen and (max-width: 500px) {
+  .news_wrap .news_content .news_card {flex-shrink: 0;width: calc(100% - 20px);}
+  .news_wrap .more h3 {font-size: 20px;}
+  .news_wrap .more span {font-size: 14px;}
+}
 
 
 /* ESG */
