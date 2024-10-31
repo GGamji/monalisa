@@ -191,13 +191,8 @@ header .allmenu_wrap .btn_allmenu_close {
   .main_visual .swiper_content span {font-size: 18px;}
 }
 @media screen and (max-width: 800px) {
-  .main_visual .swiper_content strong {font-size: 25px;}
-  .main_visual .swiper_content span {font-size: 16px;}
+  .main_visual .main-swiper .swiper-nav {display: none;}
 }
-/* @media screen and (max-width: 500px) {
-  .main_visual .swiper_content strong {font-size: 20px;}
-  .main_visual .swiper_content span {font-size: 14px;}
-} */
 
 
 /* Section */
@@ -217,7 +212,7 @@ header .allmenu_wrap .btn_allmenu_close {
 }
 .brand_wrap .brand-swiper {overflow: hidden;}
 .brand_wrap .swiper-slide {
-  display: flex;justify-content: space-between;align-items: center;
+  display: flex;justify-content: space-around;align-items: center;
 }
 .brand_wrap .brand_txt {
   display: flex;flex-direction: column;gap: 60px;
@@ -229,23 +224,35 @@ header .allmenu_wrap .btn_allmenu_close {
   font-size: 30px;color: #555;
 }
 .brand_wrap .swiper-slide img {width: 500px;height: 500px;}
-.brand-swiper .swiper-prev {
-  position: absolute;top: 50%;left: 5%;
-  transform: translate(-50%, -5%);z-index: 100;
-}
-.brand-swiper .swiper-next {
-  position: absolute;top: 50%;right: 5%;
-  transform: translate(-50%, -5%);z-index: 100;
-}
 .brand-swiper .swiper-nav {
   font-size: 60px;color: rgba(0, 0, 0, .5);cursor: pointer;
 }
+.brand-swiper .swiper-prev {
+  position: absolute;top: 50%;left: 3%;
+  transform: translate(-50%, -3%);z-index: 100;
+}
+.brand-swiper .swiper-next {
+  position: absolute;top: 50%;right: 0;
+  transform: translate(-50%, 0);z-index: 100;
+}
 
+@media screen and (max-width: 1440px) {
+  .brand_wrap .swiper-slide img {width: 40%;height: 40%;}
+  .brand_wrap .brand_txt strong {font-size: 35px;}
+  .brand_wrap .brand_txt span {font-size: 25px;}
+}
 @media screen and (max-width: 1024px) {
-  .brand_wrap .inner {width: 90%;}
+  .brand_wrap .swiper-slide {flex-direction: column;}
+  .brand_wrap .brand_txt strong {font-size: 20px;}
+  .brand_wrap .brand_txt span {font-size: 16px;}
+  .brand_wrap .swiper-slide img {width: 80%;height: 80%;}
+  .brand_wrap .brand_txt {gap: 30px;}
 }
 @media screen and (max-width: 500px) {
-  .brand_wrap .inner {width: 96%;}
+  .brand_wrap .more h3 {font-size: 20px;}
+  .brand_wrap .more span {font-size: 14px;}
+  .brand-swiper .swiper-prev {left: 3%;transform: translateX(-3%);}
+  .brand-swiper .swiper-next {right: 3%;transform: translateX(-3%);}
 }
 
 

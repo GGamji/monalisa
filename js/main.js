@@ -25,8 +25,7 @@ const brandSwiper = new Swiper('.brand-swiper', {
 			slidesPerView: 1
 		},
 		501: {
-			slidesPerView: 2,
-			spaceBetween: 30
+			slidesPerView: 2
 		},
 		1025: {
 			slidesPerView: 1
