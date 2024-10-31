@@ -251,8 +251,8 @@ header .allmenu_wrap .btn_allmenu_close {
 @media screen and (max-width: 500px) {
   .brand_wrap .more h3 {font-size: 20px;}
   .brand_wrap .more span {font-size: 14px;}
-  .brand-swiper .swiper-prev {left: 3%;transform: translateX(-3%);}
-  .brand-swiper .swiper-next {right: 3%;transform: translateX(-3%);}
+  .brand-swiper .swiper-prev {left: 1%;transform: translateX(-1%);}
+  .brand-swiper .swiper-next {right: 1%;transform: translateX(-1%);}
 }
 
 
