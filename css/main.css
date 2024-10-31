@@ -133,15 +133,17 @@ header .allmenu_wrap .btn_allmenu_close {
   header .dep1 {gap: 70px;}
   .header_util {font-size: 14px;}
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   header .dep1 {gap: 50px;}
 }
 @media screen and (max-width: 1080px) {
   header .dep1 {display: none;}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
+  header {padding: 2%;}
   header h1 a {width: 150px;height: 35px;}
 }
+
 
 
 /* Main */
@@ -190,7 +192,9 @@ header .allmenu_wrap .btn_allmenu_close {
   .main_visual .swiper_content strong {font-size: 35px;}
   .main_visual .swiper_content span {font-size: 18px;}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
+  .main_visual .swiper_content strong {font-size: 25px;}
+  .main_visual .swiper_content span {font-size: 16px;}
   .main_visual .main-swiper .swiper-nav {display: none;}
 }
 
@@ -251,8 +255,7 @@ header .allmenu_wrap .btn_allmenu_close {
 @media screen and (max-width: 500px) {
   .brand_wrap .more h3 {font-size: 20px;}
   .brand_wrap .more span {font-size: 14px;}
-  .brand-swiper .swiper-prev {left: 1%;transform: translateX(-1%);}
-  .brand-swiper .swiper-next {right: 1%;transform: translateX(-1%);}
+  .brand_wrap .swiper-nav {display: none;}
 }
 
 
