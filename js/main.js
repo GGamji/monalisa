@@ -19,7 +19,19 @@ const brandSwiper = new Swiper('.brand-swiper', {
 	navigation: {
 		nextEl: '.swiper-next',
 		prevEl: '.swiper-prev',
-  }
+  },
+	breakpoints: {
+		500: {
+			slidesPerView: 1
+		},
+		501: {
+			slidesPerView: 2,
+			spaceBetween: 30
+		},
+		1025: {
+			slidesPerView: 1
+		}
+	}
 })
 
 // $('.news_wrap .news_content .news_card').hover(function() {

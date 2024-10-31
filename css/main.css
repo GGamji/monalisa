@@ -138,7 +138,6 @@ header .allmenu_wrap .btn_allmenu_close {
 }
 @media screen and (max-width: 1080px) {
   header .dep1 {display: none;}
-  .header_util {}
 }
 @media screen and (max-width: 768px) {
   header h1 a {width: 150px;height: 35px;}
@@ -180,13 +179,25 @@ header .allmenu_wrap .btn_allmenu_close {
 }
 
 @media screen and (max-width: 1440px) {
-  .main_visual .swiper_content strong {font-size: 45px;}
+  .main_visual .swiper_content strong {font-size: 40px;}
+  .main_visual .swiper_content span {font-size: 20px;}
 }
 
 @media screen and (max-width: 1280px) {
   .main_visual .main-swiper {height: 96vh;}
-  .main_visual .swiper_content strong {font-size: 40px;}
 }
+@media screen and (max-width: 1024px) {
+  .main_visual .swiper_content strong {font-size: 35px;}
+  .main_visual .swiper_content span {font-size: 18px;}
+}
+@media screen and (max-width: 800px) {
+  .main_visual .swiper_content strong {font-size: 25px;}
+  .main_visual .swiper_content span {font-size: 16px;}
+}
+/* @media screen and (max-width: 500px) {
+  .main_visual .swiper_content strong {font-size: 20px;}
+  .main_visual .swiper_content span {font-size: 14px;}
+} */
 
 
 /* Section */
@@ -230,6 +241,13 @@ header .allmenu_wrap .btn_allmenu_close {
   font-size: 60px;color: rgba(0, 0, 0, .5);cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .brand_wrap .inner {width: 90%;}
+}
+@media screen and (max-width: 500px) {
+  .brand_wrap .inner {width: 96%;}
+}
+
 
 /* NEWS */
 .news_wrap {position: relative;}
@@ -250,8 +268,12 @@ header .allmenu_wrap .btn_allmenu_close {
 }
 .news_content .news_card {width: 35%;transition: all 0.5s;}
 .news_content .news_card:hover {flex-shrink: 0;}
+.news_content .news_card .news_img {
+  height: 230px;overflow: hidden;
+}
 .news_content .news_card img {
-  display: block;width: 100%;height: 230px;
+  display: block;width: 100%;height: 100%;
+  object-fit: cover;
 }
 .news_content .news_card .card_txt {
   display: flex;flex-direction: column;gap: 15px;
@@ -290,8 +312,12 @@ header .allmenu_wrap .btn_allmenu_close {
 .esg_wrap .esg_content .esg_card:hover {flex-shrink: 0;}
 .esg_wrap .esg_content .esg_card span {display: none;}
 .esg_wrap .esg_content .esg_card:hover span {display: block;}
+.esg_wrap .esg_content .esg_img {
+  height: 250px;overflow: hidden;
+}
 .esg_wrap .esg_content .esg_card img {
-  border-radius: 15px;width: 100%;height: 250px;
+  border-radius: 15px;width: 100%;height: 100%;
+  object-fit: cover;
 }
 .esg_wrap .esg_content .esg_card_txt {
   display: flex;flex-direction: column;
