@@ -395,7 +395,7 @@ header .allmenu_wrap .btn_allmenu_close {
 }
 @media screen and (max-width: 500px) {
   .job_wrap {gap: 25px;}
-  .job_wrap strong {font-size: 14px;}
+  .job_wrap strong {font-size: 14px;text-align: center;}
   .job_wrap .job_links {gap: 50px;}
   .job_wrap .job_links button {width: 100px;font-size: 12px;}
 }
@@ -448,5 +448,5 @@ header .allmenu_wrap .btn_allmenu_close {
   .footer_wrap .footer_l {gap: 20px;}
   .footer_wrap .footer_l>a {width: 150px;height: 35px;}
   .footer_wrap .footer_l .f_nav {gap: 20px;}
-  .footer_wrap .footer_l .f_nav .footer_links {gap: 15px;}
+  .footer_wrap .footer_l .f_nav .footer_links {gap: 14px;}
 }
