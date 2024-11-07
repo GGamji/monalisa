@@ -24,14 +24,14 @@ header h1 a {
 }
 header::after {
   content:"";
-  position: absolute;left: 0;right: 0;top: 124px;
-  opacity: 0;
+  position: absolute;left: 0;right: 0;top: 0;
+  opacity: 0;height: 120px;z-index: -1;
   background: #37736E;transition: all 0.5s;
 }
+header:hover::after {height: 450px;opacity: 1;}
 header.on {
   background: #37736E;transition: all .5s;
 }
-header.on::after {height: 310px;opacity: 1;}
 header.scroll {
   background: #5a9b95;
 }
