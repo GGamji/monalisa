@@ -1,380 +1,539 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>모나리자</title>
-  <!-- CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fonts.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모나리자</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
 
-  <!-- JS -->
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="js/main.js"></script>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <h1><a href="#"><span class="blind">모나리자</span></a></h1>
-      <nav id="gnb">
-        <h2 class="blind">메인메뉴</h2>
-        <ul class="dep1">
-          <li>
-            <a href="#">회사소개</a>
-            <div class="dep2_wrap">
-              <ul class="dep2">
-                <li><a href="#">CEO 인사말</a></li>
-                <li><a href="#">회사개요</a></li>
-                <li><a href="#">연구소</a></li>
-                <li><a href="#">CI</a></li>
-                <li><a href="#">찾아 오시는 길</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">제품소개</a>
-            <div class="dep2_wrap">
-              <ul class="dep2">
-                <li><a href="#">화장지</a></li>
-                <li><a href="#">미용티슈</a></li>
-                <li><a href="#">키친타올</a></li>
-                <li><a href="#">물티슈</a></li>
-                <li><a href="#">성인용 기저귀</a></li>
-                <li><a href="#">유아용 기저귀</a></li>
-                <li><a href="#">마스크</a></li>
-                <li><a href="#">위생용품</a></li>
-                <li><a href="#">기타</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">최신소식</a>
-            <div class="dep2_wrap">
-              <ul class="dep2">
-                <li><a href="#">재무정보</a></li>
-                <li><a href="#">IR자료</a></li>
-                <li><a href="#">전자공시</a></li>
-                <li><a href="#">배당현황 </a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">채용&문의</a>
-            <div class="dep2_wrap">
-              <ul class="dep2">
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">고객소리함</a></li>
-                <li><a href="#">협력업체</a></li>
-                <li><a href="#">채용정보</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">ESG경영</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header_util">
-        <div class="lang_wrap">
-          <button>KOR <i class="ri-arrow-down-s-fill"></i></button>
-          <ul>
-            <li><a href="#">KOR</a></li>
-            <li><a href="#">ENG</a></li>
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"
+      integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>
+          <a href="#"><span class="blind">모나리자</span></a>
+        </h1>
+        <nav id="gnb">
+          <h2 class="blind">메인메뉴</h2>
+          <ul class="dep1">
+            <li>
+              <a href="#">회사소개</a>
+              <div class="dep2_wrap">
+                <ul class="dep2">
+                  <li><a href="#">CEO 인사말</a></li>
+                  <li><a href="#">회사개요</a></li>
+                  <li><a href="#">연구소</a></li>
+                  <li><a href="#">CI</a></li>
+                  <li><a href="#">찾아 오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">제품소개</a>
+              <div class="dep2_wrap">
+                <ul class="dep2">
+                  <li><a href="#">화장지</a></li>
+                  <li><a href="#">미용티슈</a></li>
+                  <li><a href="#">키친타올</a></li>
+                  <li><a href="#">물티슈</a></li>
+                  <li><a href="#">성인용 기저귀</a></li>
+                  <li><a href="#">유아용 기저귀</a></li>
+                  <li><a href="#">마스크</a></li>
+                  <li><a href="#">위생용품</a></li>
+                  <li><a href="#">기타</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">최신소식</a>
+              <div class="dep2_wrap">
+                <ul class="dep2">
+                  <li><a href="#">재무정보</a></li>
+                  <li><a href="#">IR자료</a></li>
+                  <li><a href="#">전자공시</a></li>
+                  <li><a href="#">배당현황 </a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">채용&문의</a>
+              <div class="dep2_wrap">
+                <ul class="dep2">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">고객소리함</a></li>
+                  <li><a href="#">협력업체</a></li>
+                  <li><a href="#">채용정보</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">ESG경영</a>
+            </li>
           </ul>
-        </div>
-        <div class="search_wrap">
-          <button class="btn_search_open">
-            <i class="ri-search-line"></i>
-            <div class="blind">검색하기</div>
-          </button>
-          <div class="search_popup">
-            <h2>search</h2>
-            <form>
-              <input type="text" placeholder="필요한 정보를 검색해 보세요">
-              <button type="submit"><i class="ri-search-line"></i></button>
-              <button class="close_btn"><i class="ri-close-fill"></i></button>
-            </form>
+        </nav>
+        <div class="header_util">
+          <div class="lang_wrap">
+            <button>KOR <i class="ri-arrow-down-s-fill"></i></button>
+            <ul>
+              <li><a href="#">KOR</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="allmenu_wrap">
-          <button class="btn_allmenu_open">
-            <i class="ri-menu-3-line"></i>
-            <div class="blind">전체메뉴입니다.</div>
-          </button>
-          <div class="allmenu_popup">
-            <div class="allmenu_logo"></div>
-            <div class="allmenu_gnb"> <!--디자인 보고 결정 -->
-              <ul class="allmenu_dep1">
-                <li>
-                  <a href="#">회사소개</a>
-                  <ul class="allmenu_dep2">
-                    <li><a href="#">CEO 인사말</a></li>
-                    <li><a href="#">회사개요</a></li>
-                    <li><a href="#">연구소</a></li>
-                    <li><a href="#">CI</a></li>
-                    <li><a href="#">찾아 오시는 길</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">제품소개</a>
-                  <ul class="allmenu_dep2">
-                    <li><a href="#">화장지</a></li>
-                    <li><a href="#">미용티슈</a></li>
-                    <li><a href="#">키친타올</a></li>
-                    <li><a href="#">물티슈</a></li>
-                    <li><a href="#">성인용 기저귀</a></li>
-                    <li><a href="#">유아용 기저귀</a></li>
-                    <li><a href="#">마스크</a></li>
-                    <li><a href="#">위생용품</a></li>
-                    <li><a href="#">기타</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">최신소식</a>
-                  <ul class="allmenu_dep2">
-                    <li><a href="#">재무정보</a></li>
-                    <li><a href="#">IR자료</a></li>
-                    <li><a href="#">전자공시</a></li>
-                    <li><a href="#">배당현황 </a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">채용&문의</a>
-                  <ul class="allmenu_dep2">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">고객소리함</a></li>
-                    <li><a href="#">협력업체</a></li>
-                    <li><a href="#">채용정보</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">ESG경영</a>
-                </li>
-              </ul>
-            </div>
-            <button class="btn_allmenu_close">
-              <i class="ri-close-fill"></i>
-              <div class="blind">닫기</div>
+          <div class="search_wrap">
+            <button class="btn_search_open">
+              <i class="ri-search-line"></i>
+              <div class="blind">검색하기</div>
             </button>
+            <div class="search_popup">
+              <h2>search</h2>
+              <form>
+                <input type="text" placeholder="필요한 정보를 검색해 보세요" />
+                <button type="submit"><i class="ri-search-line"></i></button>
+                <button class="close_btn"><i class="ri-close-fill"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="allmenu_wrap">
+            <button class="btn_allmenu_open">
+              <i class="ri-menu-3-line"></i>
+              <div class="blind">전체메뉴입니다.</div>
+            </button>
+            <div class="allmenu_popup">
+              <div class="allmenu_logo"></div>
+              <div class="allmenu_gnb">
+                <!--디자인 보고 결정 -->
+                <ul class="allmenu_dep1">
+                  <li>
+                    <a href="#">회사소개</a>
+                    <ul class="allmenu_dep2">
+                      <li><a href="#">CEO 인사말</a></li>
+                      <li><a href="#">회사개요</a></li>
+                      <li><a href="#">연구소</a></li>
+                      <li><a href="#">CI</a></li>
+                      <li><a href="#">찾아 오시는 길</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">제품소개</a>
+                    <ul class="allmenu_dep2">
+                      <li><a href="#">화장지</a></li>
+                      <li><a href="#">미용티슈</a></li>
+                      <li><a href="#">키친타올</a></li>
+                      <li><a href="#">물티슈</a></li>
+                      <li><a href="#">성인용 기저귀</a></li>
+                      <li><a href="#">유아용 기저귀</a></li>
+                      <li><a href="#">마스크</a></li>
+                      <li><a href="#">위생용품</a></li>
+                      <li><a href="#">기타</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">최신소식</a>
+                    <ul class="allmenu_dep2">
+                      <li><a href="#">재무정보</a></li>
+                      <li><a href="#">IR자료</a></li>
+                      <li><a href="#">전자공시</a></li>
+                      <li><a href="#">배당현황 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">채용&문의</a>
+                    <ul class="allmenu_dep2">
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">고객소리함</a></li>
+                      <li><a href="#">협력업체</a></li>
+                      <li><a href="#">채용정보</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">ESG경영</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn_allmenu_close">
+                <i class="ri-close-fill"></i>
+                <div class="blind">닫기</div>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main id="main_content">
-      <div class="main_visual">
-        <div class="main-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/main-visual.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/main-visual2.jpg" alt=""></div>
+      </header>
+      <main id="main_content">
+        <div class="main_visual">
+          <div class="main-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/main-visual.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main-visual2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-nav">
+              <div class="swiper-prev">
+                <i class="ri-arrow-left-wide-fill"></i>
+              </div>
+              <div class="swiper-next">
+                <i class="ri-arrow-right-wide-fill"></i>
+              </div>
+            </div>
           </div>
-          <div class="swiper-nav">
-            <div class="swiper-prev"><i class="ri-arrow-left-wide-fill"></i></div>
-            <div class="swiper-next"><i class="ri-arrow-right-wide-fill"></i></div>
+          <div class="swiper_content">
+            <strong
+              >일상의 안전과 건강한 삶을<br />지원하는 생활위생 전문
+              그룹</strong
+            >
+            <span>까다롭고 철저한 제조공정을 거쳐 생산된 고품격 브랜드</span>
           </div>
-        </div>
-        <div class="swiper_content">
-          <strong>일상의 안전과 건강한 삶을<br>지원하는 생활위생 전문 그룹</strong>
-          <span>까다롭고 철저한 제조공정을 거쳐 생산된 고품격 브랜드</span>
-        </div>
-        <!-- <div class="swiper-auto-controls">
+          <!-- <div class="swiper-auto-controls">
           <button class="auto-play"><i class="ri-play-circle-line"></i></button>
           <button class="auto-stop"><i class="ri-pause-circle-line"></i></button>
         </div> -->
-      </div>
-      <h2 class="blind">메인 본문</h2>
-      <section class="brand_wrap">
-        <div class="inner">
-          <div class="more">
-            <h3>BRAND</h3>
-            <a href="#" class="more_btn">
-              <span>More</span>
-              <i class="ri-arrow-right-s-line"></i>
-            </a>
-          </div>
-          <div class="brand-swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <img src="img/brand.png" alt="">
-                <div class="brand_txt">
-                  <strong>보타닉포레 순수 27m 30롤</strong>
-                  <span>천연펄프 100%로 순수하고 깨끗하게 <br>펄프는 100% 천연펄프 <br>걱정없는 무형광 <br>물에 잘 풀리는 비데용 화장지</span>
+        </div>
+        <h2 class="blind">메인 본문</h2>
+        <section class="brand_wrap">
+          <div class="inner">
+            <div class="more">
+              <h3>BRAND</h3>
+              <a href="#" class="more_btn">
+                <span>More</span>
+                <i class="ri-arrow-right-s-line"></i>
+              </a>
+            </div>
+            <div class="brand-swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="img/brand.png" alt="" />
+                  <div class="brand_txt">
+                    <strong>보타닉포레 순수 27m 30롤</strong>
+                    <span
+                      >천연펄프 100%로 순수하고 깨끗하게 <br />펄프는 100%
+                      천연펄프 <br />걱정없는 무형광 <br />물에 잘 풀리는 비데용
+                      화장지</span
+                    >
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <img src="img/brand2.png" alt="" />
+                  <div class="brand_txt">
+                    <strong>모나리자 피부 저자극 250매 3입 미용티슈</strong>
+                    <span
+                      >자극없이 피부에 부드럽게 <br />천연펄프 100% 걱정없이
+                      <br />투명 눈금창으로 사용량을 바로바로 체크 <br />독일
+                      더마테스트 'Excellent' 등급 획득</span
+                    >
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <img src="img/brand4.png" alt="" />
+                  <div class="brand_txt">
+                    <strong>모나리자 빨아쓰는 키친타올 50매 6롤</strong>
+                    <span
+                      >하루 한장! 위생적이고 편리하게 <br />50% 더 도톰해서 물에
+                      젖어도 짱짱 <br />강력하고 세련된 벌집 엠보싱 적용</span
+                    >
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <img src="img/brand3.png" alt="" />
+                  <div class="brand_txt">
+                    <strong
+                      >모나리자 도톰한 유아용 <br />내추럴 포레스트 물티슈 캡형
+                      100매</strong
+                    >
+                    <span
+                      >녹차잎 추출물이 함유되어 피부를 편안하게 <br />도톰하고
+                      부드러운 플레인 원단으로 <br />잔여감 없이 깨끗하고
+                      <br />미네랄이 풍부한 해양심층수 함유</span
+                    >
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-nav">
+                <div class="swiper-prev">
+                  <i class="ri-arrow-left-wide-fill"></i>
                 </div>
-              </li>
-              <li class="swiper-slide">
-                <img src="img/brand2.png" alt="">
-                <div class="brand_txt">
-                  <strong>모나리자 피부 저자극 250매 3입 미용티슈</strong>
-                  <span>자극없이 피부에 부드럽게 <br>천연펄프 100% 걱정없이 <br>투명 눈금창으로 사용량을 바로바로 체크 <br>독일 더마테스트 'Excellent' 등급 획득</span>
+                <div class="swiper-next">
+                  <i class="ri-arrow-right-wide-fill"></i>
                 </div>
-              </li>
-              <li class="swiper-slide">
-                <img src="img/brand4.png" alt="">
-                <div class="brand_txt">
-                  <strong>모나리자 빨아쓰는 키친타올 50매 6롤</strong>
-                  <span>하루 한장! 위생적이고 편리하게 <br>50% 더 도톰해서 물에 젖어도 짱짱 <br>강력하고 세련된 벌집 엠보싱 적용</span>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <img src="img/brand3.png" alt="">
-                <div class="brand_txt">
-                  <strong>모나리자 도톰한 유아용 <br>내추럴 포레스트 물티슈 캡형 100매</strong>
-                  <span>녹차잎 추출물이 함유되어 피부를 편안하게 <br>도톰하고 부드러운 플레인 원단으로 <br>잔여감 없이 깨끗하고 <br>미네랄이 풍부한 해양심층수 함유</span>
-                </div>
-              </li>
-            </ul>
-            <div class="swiper-nav">
-              <div class="swiper-prev"><i class="ri-arrow-left-wide-fill"></i></div>
-              <div class="swiper-next"><i class="ri-arrow-right-wide-fill"></i></div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="news_wrap">
-        <div class="inner">
-          <div class="more">
-            <h3>NEWS</h3>
-            <a href="#" class="more_btn"> <!-- 포지션-->
-              <span>More</span>
-              <i class="ri-arrow-right-s-line"></i>
-            </a>
-          </div>
-          <ul class="news_content">
-            <li class="news_card">
-              <div class="news_img">
-                <img src="img/news2.png" alt="">
-              </div>
+        </section>
+        <section class="news_wrap">
+          <div class="inner">
+            <div class="more">
+              <h3>NEWS</h3>
+              <a href="#" class="more_btn">
+                <!-- 포지션-->
+                <span>More</span>
+                <i class="ri-arrow-right-s-line"></i>
+              </a>
+            </div>
+            <ul class="news_content">
+              <li class="news_card">
+                <div class="news_img">
+                  <img src="img/news2.png" alt="" />
+                </div>
                 <div class="card_txt">
-                  <strong>모나리자 ‘좋은느낌 라네이처’, 생물다양성 위한 가드닝 사업 후원</strong>
-                  <span>모나리자 여성용품 브랜드 좋은느낌 라네이처가 도심 내 녹지 불균형 해소와 기후변화 대응에 동참하기 위해 ‘느슨한 가드닝’ 식재 사업을 후원했다고 밝혔다. <br> 올해로 4년째를 맞는 느슨한 가드닝은 비영리 재단인 서울그린트러스트의 대표 공익사업이다. 좋은느낌 라네이처는 <br> 누구에게나 공평한 녹색 서비스를 확대하고, 지역사회의 삶의 질을 개선하는 데 기여한다는 취지에 공감해 해당 사업을 <br> 후원하게 되었으며, 이를 위해 매출 일부를 기금으로 출연했다. <br> 후원 사업은 서울시 내 25개 자치구 중 1인당 생활권 녹지 면적이 가장 적은 광진구에 위치한 서울어린이대공원에서 <br> 진행되었다. 시니어, 2030 청년 세대 등 다양한 시민들과 함께한 가운데 생물다양성 증진에 효과적인 여러살이 꽃 <br> 17종을 식재했고, 식물 도감도 제작했다.</span>
+                  <strong
+                    >모나리자 ‘좋은느낌 라네이처’, 생물다양성 위한 가드닝 사업
+                    후원</strong
+                  >
+                  <span
+                    >모나리자 여성용품 브랜드 좋은느낌 라네이처가 도심 내 녹지
+                    불균형 해소와 기후변화 대응에 동참하기 위해 ‘느슨한 가드닝’
+                    식재 사업을 후원했다고 밝혔다. <br />
+                    올해로 4년째를 맞는 느슨한 가드닝은 비영리 재단인
+                    서울그린트러스트의 대표 공익사업이다. 좋은느낌 라네이처는
+                    <br />
+                    누구에게나 공평한 녹색 서비스를 확대하고, 지역사회의 삶의
+                    질을 개선하는 데 기여한다는 취지에 공감해 해당 사업을 <br />
+                    후원하게 되었으며, 이를 위해 매출 일부를 기금으로 출연했다.
+                    <br />
+                    후원 사업은 서울시 내 25개 자치구 중 1인당 생활권 녹지
+                    면적이 가장 적은 광진구에 위치한 서울어린이대공원에서 <br />
+                    진행되었다. 시니어, 2030 청년 세대 등 다양한 시민들과 함께한
+                    가운데 생물다양성 증진에 효과적인 여러살이 꽃 <br />
+                    17종을 식재했고, 식물 도감도 제작했다.</span
+                  >
                   <span>2024.09.06</span>
                 </div>
-            </li>
-            <li class="news_card">
-              <div class="news_img">
-                <img src="img/news1.png" alt="">
-              </div>
-              <div class="card_txt">
-                <strong>모나리자, 위생취약계층 아동 위한 ‘크리넥스 해피클린’ 사회공헌 캠페인 실시</strong>
-                <span>모나리자는 위생취약계층 아동의 건강하고 위생적인 일상에 기여하기 위한 ‘크리넥스 해피클린 캠페인’을 올해로 <br> 2년째 전개한다고 밝혔다. 캠페인은 오는 8월 12일까지 진행된다. <br> 지난 해 모나리자 크리넥스는 위생취약계층 아동을 보호하고, 건강하고 올바른 위생습관 형성을 돕기 위해 해피클린 <br> 캠페인을 첫 실시하였다. 전국 306곳 아동보호시설 약 7천명의 아동에게 크리넥스 위생지킴이 제품을 전달하고, <br> 지역아동센터 화장실을 비롯한 위생 시설을 개보수한 바 있다. <br> 캠페인은 네이버 해피빈과 협업 하에 교육과 제품 기부 두 가지로 진행된다. 크리넥스는 아동을 위한 올바른 마스크<br> 착용법과 손 씻기 방법, 배변 독립을 위한 온라인 교육 콘텐츠를 해피빈 내 캠페인 페이지를 통해 제공하며, 전국 <br> 아동보호시설 어린이 약 5,000명에게 위생용품을 전달할 예정이다.</span>
-                <span>2024.07.28</span>
-              </div>
-            </li>
-            <li class="news_card">
-              <div class="news_img">
-                <img src="img/news3.png" alt="">
-              </div>
-              <div class="card_txt">
-                <strong>모나리자 진재승 대표, 윤경ESG포럼 CEO 서약 동참</strong>
-                <span>모나리자 진재승 대표이사 사장은 2일 윤경ESG포럼 CEO서약식(이하 서약식)에 참여해 윤리경영의 실천과 확산을 <br> 위해 함께 노력할 것임을 대내외에 약속했다. <br> 산업정책연구원과 서울과학종합대학원대학교가 주관한 이번 서약식은 ‘언어폭력 없는 사회’를 부제로 개최되었으며, <br> 서약에 동참한 100여 명의 CEO는 언어의 중요성을 인식하고 언어폭력 없는 사회를 만들기 위해 앞장서 노력할 것을 <br> 다짐했다. 국내 최장수 숲환경 공익캠페인 ‘우리강산 푸르게 푸르게’로 잘 알려진 모나리자는 1970년 창립 이래 위생문화 발전을 <br> 이끌어 왔으며, 윤리경영을 기반으로 환경경영, 사회공헌, 노경협력, 지속가능경영 등의 경영혁신을 주도해 왔다.</span>
-                <span>2024.05.02</span>
-              </div>
-            </li>
-            <li class="news_card">
-              <div class="news_img">
-                <img src="img/news4.png" alt="">
-              </div>
-              <div class="card_txt">
-                <strong>모나리자 그린핑거 베베그로우, 올 실리콘 나비 쪽쪽이 출시</strong>
-                <span>모나리자 육아용품 전문 브랜드 ‘그린핑거 베베그로우’가 ‘올 실리콘 나비 쪽쪽이’ 신제품을 출시했다. 일명 노리개 <br> 젖꼭지로 불리는 쪽쪽이는 정서적 안정감과 코호흡 촉진, 구강 발달 등을 위해 널리 사용되는 제품이다. <br> 신제품은 자사 젖꼭지의 기술력을 기반으로 개발됐다. 부드러운 실리콘 소재로만 만들어졌으며, 나비를 형상화한 <br> 직관적인 디자인이 특징이다. 아이 성장단계에 따라 1단계(0~6개월 권장)와 2단계(6개월~18개월 권장)로 구분되며, <br> 전용 케이스도 구비되어 있다. 신제품은 심플해 보이는 외형과는 달리 구조적으로도 뛰어날 뿐만 아니라 다양한 제품 노하우도 반영되어 있다. <br> 일체형으로 만들어져 제품 분리로 인한 삼킴, 질식 사고 등의 위험을 낮춰주고, 물 고임이 적은 오픈형이어서 세척, 건조, <br> 소독도 편리하고 위생적이다. 치아와 잇몸 구조까지 고려해 대칭적인 디자인도 적용됐다.</span>
-                <span>2024.04.25</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="esg_wrap">
-        <div class="inner">
-          <div class="more">
-            <h3>ESG</h3>
-            <a href="#" class="more_btn"> <!-- 포지션-->
-              <span>More</span>
-              <i class="ri-arrow-right-s-line"></i>
-            </a>
-          </div>
-          <div class="esg_content">
-            <div class="esg_card">
-              <div class="esg_img">
-                <img src="img/poss1.png" alt="">
-              </div>
-              <div class="esg_card_txt">
-                <strong>목표와 전략</strong>
-                <span>지구환경과 사람의 지속가능성에 대해 고민하고, <br> 이를 전략과 목표, 이니셔티브에 반영하여 실천합니다.</span>
-              </div>
-            </div>
-            <div class="esg_card">
-              <div class="esg_img">
-                <img src="img/poss2.png" alt="">
-              </div>
-              <div class="esg_card_txt">
-                <strong>환경</strong>
-                <span>기후위기 대응을 위한 전 지구적 노력에 동참합니다.</span>
-              </div>
-            </div>
-            <div class="esg_card">
-              <div class="esg_img">
-                <img src="img/poss3.png" alt="">
-              </div>
-              <div class="esg_card_txt">
-                <strong>사회</strong>
-                <span>사회와 함께하는 가치있는 성장을 추구합니다.</span>
-              </div>
-            </div>
-            <div class="esg_card">
-              <div class="esg_img">
-                <img src="img/poss4.png" alt="">
-              </div>
-              <div class="esg_card_txt">
-                <strong>사회공헌활동</strong>
-                <span>숲을 매개로, 사회 문제 해결을 위해 지역사회와 함께 합니다.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="job_wrap">
-        <strong>고객의 아름다움과 꿈을 실현하는 최고의 생환문화 기업 모나리자입니다.</strong>
-        <div class="job_links">
-          <button><a href="#">채용 바로가기</a></button>
-          <button><a href="#">IR 바로가기</a></button>
-        </div>
-      </section>
-    </main>
-    <footer class="footer_wrap">
-      <div class="footer_content">
-        <div class="footer_l">
-          <a href="#"><span class="blind">모나리자</span></a>
-          <div class="f_nav">
-            <ul class="footer_links">
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">회사소개</a></li>
-              <li><a href="#">오시는 길</a></li>
-              <li><a href="#">채용정보</a></li>
-              <li><a href="#">이메일무단수집거부</a></li>
+              </li>
+              <li class="news_card">
+                <div class="news_img">
+                  <img src="img/news1.png" alt="" />
+                </div>
+                <div class="card_txt">
+                  <strong
+                    >모나리자, 위생취약계층 아동 위한 ‘크리넥스 해피클린’
+                    사회공헌 캠페인 실시</strong
+                  >
+                  <span
+                    >모나리자는 위생취약계층 아동의 건강하고 위생적인 일상에
+                    기여하기 위한 ‘크리넥스 해피클린 캠페인’을 올해로 <br />
+                    2년째 전개한다고 밝혔다. 캠페인은 오는 8월 12일까지
+                    진행된다. <br />
+                    지난 해 모나리자 크리넥스는 위생취약계층 아동을 보호하고,
+                    건강하고 올바른 위생습관 형성을 돕기 위해 해피클린 <br />
+                    캠페인을 첫 실시하였다. 전국 306곳 아동보호시설 약 7천명의
+                    아동에게 크리넥스 위생지킴이 제품을 전달하고, <br />
+                    지역아동센터 화장실을 비롯한 위생 시설을 개보수한 바 있다.
+                    <br />
+                    캠페인은 네이버 해피빈과 협업 하에 교육과 제품 기부 두
+                    가지로 진행된다. 크리넥스는 아동을 위한 올바른 마스크<br />
+                    착용법과 손 씻기 방법, 배변 독립을 위한 온라인 교육 콘텐츠를
+                    해피빈 내 캠페인 페이지를 통해 제공하며, 전국 <br />
+                    아동보호시설 어린이 약 5,000명에게 위생용품을 전달할
+                    예정이다.</span
+                  >
+                  <span>2024.07.28</span>
+                </div>
+              </li>
+              <li class="news_card">
+                <div class="news_img">
+                  <img src="img/news3.png" alt="" />
+                </div>
+                <div class="card_txt">
+                  <strong
+                    >모나리자 진재승 대표, 윤경ESG포럼 CEO 서약 동참</strong
+                  >
+                  <span
+                    >모나리자 진재승 대표이사 사장은 2일 윤경ESG포럼
+                    CEO서약식(이하 서약식)에 참여해 윤리경영의 실천과 확산을
+                    <br />
+                    위해 함께 노력할 것임을 대내외에 약속했다. <br />
+                    산업정책연구원과 서울과학종합대학원대학교가 주관한 이번
+                    서약식은 ‘언어폭력 없는 사회’를 부제로 개최되었으며, <br />
+                    서약에 동참한 100여 명의 CEO는 언어의 중요성을 인식하고
+                    언어폭력 없는 사회를 만들기 위해 앞장서 노력할 것을 <br />
+                    다짐했다. 국내 최장수 숲환경 공익캠페인 ‘우리강산 푸르게
+                    푸르게’로 잘 알려진 모나리자는 1970년 창립 이래 위생문화
+                    발전을 <br />
+                    이끌어 왔으며, 윤리경영을 기반으로 환경경영, 사회공헌,
+                    노경협력, 지속가능경영 등의 경영혁신을 주도해 왔다.</span
+                  >
+                  <span>2024.05.02</span>
+                </div>
+              </li>
+              <li class="news_card">
+                <div class="news_img">
+                  <img src="img/news4.png" alt="" />
+                </div>
+                <div class="card_txt">
+                  <strong
+                    >모나리자 그린핑거 베베그로우, 올 실리콘 나비 쪽쪽이
+                    출시</strong
+                  >
+                  <span
+                    >모나리자 육아용품 전문 브랜드 ‘그린핑거 베베그로우’가 ‘올
+                    실리콘 나비 쪽쪽이’ 신제품을 출시했다. 일명 노리개 <br />
+                    젖꼭지로 불리는 쪽쪽이는 정서적 안정감과 코호흡 촉진, 구강
+                    발달 등을 위해 널리 사용되는 제품이다. <br />
+                    신제품은 자사 젖꼭지의 기술력을 기반으로 개발됐다. 부드러운
+                    실리콘 소재로만 만들어졌으며, 나비를 형상화한 <br />
+                    직관적인 디자인이 특징이다. 아이 성장단계에 따라
+                    1단계(0~6개월 권장)와 2단계(6개월~18개월 권장)로 구분되며,
+                    <br />
+                    전용 케이스도 구비되어 있다. 신제품은 심플해 보이는 외형과는
+                    달리 구조적으로도 뛰어날 뿐만 아니라 다양한 제품 노하우도
+                    반영되어 있다. <br />
+                    일체형으로 만들어져 제품 분리로 인한 삼킴, 질식 사고 등의
+                    위험을 낮춰주고, 물 고임이 적은 오픈형이어서 세척, 건조,
+                    <br />
+                    소독도 편리하고 위생적이다. 치아와 잇몸 구조까지 고려해
+                    대칭적인 디자인도 적용됐다.</span
+                  >
+                  <span>2024.04.25</span>
+                </div>
+              </li>
             </ul>
-            <address>
-              서울특별시 동작구 보라매로5길 15 <br> Tel. 02.829.8800 Fax. 02.829.8899 <br>
-              COPYRIGHTS © MONALISA.All rights reserved.
-            </address>
+          </div>
+        </section>
+        <section class="esg_wrap">
+          <div class="inner">
+            <div class="more">
+              <h3>ESG</h3>
+              <a href="#" class="more_btn">
+                <!-- 포지션-->
+                <span>More</span>
+                <i class="ri-arrow-right-s-line"></i>
+              </a>
+            </div>
+            <div class="esg_content">
+              <div class="esg_card">
+                <div class="esg_img">
+                  <img src="img/poss1.png" alt="" />
+                </div>
+                <div class="esg_card_txt">
+                  <strong>목표와 전략</strong>
+                  <span
+                    >지구환경과 사람의 지속가능성에 대해 고민하고, <br />
+                    이를 전략과 목표, 이니셔티브에 반영하여 실천합니다.</span
+                  >
+                </div>
+              </div>
+              <div class="esg_card">
+                <div class="esg_img">
+                  <img src="img/poss2.png" alt="" />
+                </div>
+                <div class="esg_card_txt">
+                  <strong>환경</strong>
+                  <span>기후위기 대응을 위한 전 지구적 노력에 동참합니다.</span>
+                </div>
+              </div>
+              <div class="esg_card">
+                <div class="esg_img">
+                  <img src="img/poss3.png" alt="" />
+                </div>
+                <div class="esg_card_txt">
+                  <strong>사회</strong>
+                  <span>사회와 함께하는 가치있는 성장을 추구합니다.</span>
+                </div>
+              </div>
+              <div class="esg_card">
+                <div class="esg_img">
+                  <img src="img/poss4.png" alt="" />
+                </div>
+                <div class="esg_card_txt">
+                  <strong>사회공헌활동</strong>
+                  <span
+                    >숲을 매개로, 사회 문제 해결을 위해 지역사회와 함께
+                    합니다.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="job_wrap">
+          <strong
+            >고객의 아름다움과 꿈을 실현하는 최고의 생환문화 기업
+            모나리자입니다.</strong
+          >
+          <div class="job_links">
+            <button><a href="#">채용 바로가기</a></button>
+            <button><a href="#">IR 바로가기</a></button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer_wrap">
+        <div class="footer_content">
+          <div class="footer_l">
+            <a href="#"><span class="blind">모나리자</span></a>
+            <div class="f_nav">
+              <ul class="footer_links">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+              </ul>
+              <address>
+                서울특별시 동작구 보라매로5길 15 <br />
+                Tel. 02.829.8800 Fax. 02.829.8899 <br />
+                COPYRIGHTS © MONALISA.All rights reserved.
+              </address>
+            </div>
+          </div>
+          <div class="footer_r">
+            <ul class="sns">
+              <li>
+                <a href="https://www.facebook.com/?locale=ko_KR" target="_blank"
+                  ><i class="ri-facebook-circle-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://x.com/?lang=ko" target="_blank"
+                  ><i class="ri-twitter-x-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/?app=desktop&hl=ko&gl=KR"
+                  target="_blank"
+                  ><i class="ri-youtube-fill"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer_r">
-          <ul class="sns">
-            <li><a href="https://www.facebook.com/?locale=ko_KR" target="_blank"><i class="ri-facebook-circle-fill"></i></a></li>
-            <li><a href="https://x.com/?lang=ko" target="_blank"><i class="ri-twitter-x-fill"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
-            <li><a href="https://www.youtube.com/?app=desktop&hl=ko&gl=KR" target="_blank"><i class="ri-youtube-fill"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
